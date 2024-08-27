@@ -7,13 +7,11 @@ import CourseModules from "../components/CourseModules";
 import Instructor from "../components/Instructor";
 import Feedback from "../components/Feedback";
 import "./Home.css";
-import Dashboard from "./dashboard/Dashboard";
 
 function Home() {
   return (
     <div>
       <Banner />
-      <Dashboard />
       <HomeInformation />
       <EducatingIndustryleaders />
       <HomeAboutInfo />

@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/logo.png";
+import logo from "../assets/navberlogo.png";
 import { Link } from "react-router-dom";
 import bannerImage from "../assets/bg-banner.png";
 import { signOutUser, useUserProfile } from "../api/allApi";
@@ -113,17 +113,17 @@ function Navbar() {
               </ul>
             </div>
             <Link to="/" className="btn btn-ghost text-xl">
-              <img src={logo} alt="" />
+              <img className="w-[35px]" src={logo} alt="" /> BFIT
             </Link>
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">{navItems}</ul>
           </div>
           <div className="navbar-end">
-            <div className="hidden md:block">
+            <div className="">
               <a
                 href="/enroll"
-                className="btn text-white bg-gradient-to-r from-teal-400 to-blue-500 hover:from-pink-500 hover:to-orange-500 btn-sm px-6 py-2"
+                className="btn text-white bg-gradient-to-r from-teal-400 to-blue-500 hover:from-pink-500 hover:to-orange-500 btn-sm px-3 lg:px-6 py-2"
               >
                 Enroll Now
               </a>
