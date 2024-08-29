@@ -4,22 +4,23 @@ import Loader from "./Loading";
 
 function CourseModules() {
   const { milestones, loading, error } = useMilestone();
-  const [activeMilestone, setActiveMilestone] = useState(null);
+  const [activeMilestone, setActiveMilestone] = useState({});
   const [activeModule, setActiveModule] = useState({});
 
   const toggleMilestone = (milestoneIndex) => {
-    if (activeMilestone === milestoneIndex) {
-      setActiveMilestone(null);
-    } else {
-      setActiveMilestone(milestoneIndex);
-    }
+    setActiveMilestone((prev) => ({
+      ...prev,
+      [milestoneIndex]: !prev[milestoneIndex],
+    }));
   };
 
   const toggleModule = (milestoneIndex, moduleIndex) => {
     setActiveModule((prev) => ({
       ...prev,
-      [milestoneIndex]:
-        prev[milestoneIndex] === moduleIndex ? null : moduleIndex,
+      [milestoneIndex]: {
+        ...prev[milestoneIndex],
+        [moduleIndex]: !prev[milestoneIndex]?.[moduleIndex],
+      },
     }));
   };
 
@@ -58,15 +59,14 @@ function CourseModules() {
               style={{ backgroundColor: "#A369FF" }}
             >
               <input
-                type="radio"
-                name="milestone"
-                checked={activeMilestone === milestoneIndex}
+                type="checkbox"
+                checked={activeMilestone[milestoneIndex] || false}
                 onChange={() => toggleMilestone(milestoneIndex)}
               />
               <div className="collapse-title text-[15px] md:text-xl font-medium bg-gradient-to-b from-[#884AFF] to-[#C54AFF] text-white">
                 {milestone.MilestoneName}
               </div>
-              {activeMilestone === milestoneIndex && (
+              {activeMilestone[milestoneIndex] && (
                 <div className="collapse-content bg-purple-100 rounded-b-lg">
                   {milestone.modules.map((module, moduleIndex) => (
                     <div
@@ -80,9 +80,10 @@ function CourseModules() {
                     >
                       {module.topics.length > 0 ? (
                         <input
-                          type="radio"
-                          name={`module-${milestoneIndex}`}
-                          checked={activeModule[milestoneIndex] === moduleIndex}
+                          type="checkbox"
+                          checked={
+                            activeModule[milestoneIndex]?.[moduleIndex] || false
+                          }
                           onChange={() =>
                             toggleModule(milestoneIndex, moduleIndex)
                           }

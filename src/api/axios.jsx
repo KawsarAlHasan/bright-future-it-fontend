@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://api.bright-futureit.com/api/v1",
+  baseURL: "https://api-bfi.alloneautos.com/api/v1",
 });
 
 API.interceptors.request.use((config) => {

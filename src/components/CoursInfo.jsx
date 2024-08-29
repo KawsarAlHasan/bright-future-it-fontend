@@ -16,22 +16,21 @@ function CoursInfo() {
         backgroundPosition: "center",
       }}
     >
-      <div className="mx-8 md:mx-16 mt-[-240px] lg:mx-72">
+      <div className="mx-2 md:mx-16 mt-[-98px] md:mt-[-150px] lg:mt-[-240px] lg:mx-72">
         <iframe
           data-aos="fade-up"
           data-aos-delay="1100"
           width="100%"
-          height="480px"
           src="https://www.youtube.com/embed/ndAQfTzlVjc"
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
-          className="rounded-lg shadow-lg"
+          className="rounded-lg shadow-lg h-[196px] md:h-[300px] lg:h-[480px]"
         />
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mx-5 md:mx-16 lg:mx-36 my-16">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mx-5 md:mx-16 lg:mx-36 my-12 lg:my-16">
         <div
           data-aos="fade-up"
           data-aos-delay="0"

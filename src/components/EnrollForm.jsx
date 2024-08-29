@@ -31,6 +31,7 @@ const EnrollForm = () => {
   const [promoValid, setPromoValid] = useState(true);
   const [clculateAmount, setCalculateAmount] = useState(coursePrice);
 
+  // bkash nagad rocket
   useEffect(() => {
     const updatePaymentInfo = () => {
       switch (formData.payment_method) {
@@ -127,6 +128,7 @@ const EnrollForm = () => {
 
       if (response.statusText) {
         toast(`Enroll successful`);
+        window.location.reload();
       }
     } catch (error) {
       if (error.response) {
@@ -255,7 +257,7 @@ const EnrollForm = () => {
                 placeholder="Sender Number"
                 value={formData.sender_number}
                 onChange={handleChange}
-                className="font-semibold input input-sm input-bordered w-full focus:outline-none focus:ring-2 focus:ring-[#884AFF] focus:border-transparent transition-transform transform duration-300 ease-in-out hover:scale-105"
+                className="font-semibold input input-bordered w-full focus:outline-none focus:ring-2 focus:ring-[#884AFF] focus:border-transparent transition-transform transform duration-300 ease-in-out hover:scale-105"
                 required
               />
             </div>

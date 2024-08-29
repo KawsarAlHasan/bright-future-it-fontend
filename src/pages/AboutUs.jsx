@@ -1,16 +1,15 @@
 import React from "react";
-import CourseModules from "../components/CourseModules";
+import Instructor from "../components/Instructor";
+import HomeInformation from "../components/HomeInformation";
+import ContractUs from "../components/ContractUs";
 import bannerImage from "../assets/bg-banner.png";
 import flutterImage from "../assets/flutter.png";
 import dartImage from "../assets/dart.png";
 import firebaseImage from "../assets/firebase.png";
 import sqliteImage from "../assets/Sqlite.png";
 import { motion } from "framer-motion";
-import NextBatch from "../components/NextBatch";
-import LearnCours from "../components/LearnCours";
-import CoursInfo from "../components/CoursInfo";
 
-function CourseDetails() {
+function AboutUs() {
   return (
     <div>
       <div
@@ -104,13 +103,11 @@ function CourseDetails() {
           </div>
         </div>
       </div>
-
-      <NextBatch />
-      <LearnCours />
-      <CoursInfo />
-      <CourseModules />
+      <HomeInformation />
+      <Instructor />
+      <ContractUs />
     </div>
   );
 }
 
-export default CourseDetails;
+export default AboutUs;

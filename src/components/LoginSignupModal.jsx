@@ -26,7 +26,7 @@ function LoginSignupModal() {
               type="radio"
               name="my_tabs_2"
               role="tab"
-              className="tab"
+              className="tab font-semibold"
               aria-label="Login"
             />
             <div
@@ -40,7 +40,7 @@ function LoginSignupModal() {
               type="radio"
               name="my_tabs_2"
               role="tab"
-              className="tab"
+              className="tab font-semibold"
               aria-label="Signup"
               defaultChecked
             />

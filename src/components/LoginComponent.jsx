@@ -45,27 +45,27 @@ function LoginComponent() {
 
         <div className="form-control">
           <label className="label">
-            <span className="label-text">Email</span>
+            <span className="label-text font-semibold">Email</span>
           </label>
           <input
             type="email"
             name="email"
             onChange={handleChange}
             placeholder="email"
-            className="input input-sm input-bordered focus:outline-none focus:ring-2 focus:ring-[#884AFF] focus:border-transparent transition-transform transform duration-300 ease-in-out hover:scale-105"
+            className="input input-bordered focus:outline-none focus:ring-2 focus:ring-[#884AFF] focus:border-transparent transition-transform transform duration-300 ease-in-out hover:scale-105"
             required
           />
         </div>
         <div className="form-control">
           <label className="label">
-            <span className="label-text">Password</span>
+            <span className="label-text font-semibold">Password</span>
           </label>
           <input
             type="password"
             name="password"
             onChange={handleChange}
             placeholder="password"
-            className="input input-sm input-bordered focus:outline-none focus:ring-2 focus:ring-[#884AFF] focus:border-transparent transition-transform transform duration-300 ease-in-out hover:scale-105"
+            className="input input-bordered focus:outline-none focus:ring-2 focus:ring-[#884AFF] focus:border-transparent transition-transform transform duration-300 ease-in-out hover:scale-105"
             required
           />
           <label className="label">
@@ -77,7 +77,7 @@ function LoginComponent() {
         <div className="form-control">
           <button
             type="submit"
-            className="btn btn-primary btn-sm text-white bg-gradient-to-r from-[#884AFF] to-[#C54AFF] hover:from-teal-400 hover:to-blue-500"
+            className="btn btn-primary text-white bg-gradient-to-r from-[#884AFF] to-[#C54AFF] hover:from-teal-400 hover:to-blue-500"
           >
             Login
           </button>

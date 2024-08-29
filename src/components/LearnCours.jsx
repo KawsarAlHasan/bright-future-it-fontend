@@ -2,7 +2,7 @@ import React from "react";
 
 function LearnCours() {
   return (
-    <div className="bg-gradient-to-b from-[#C54AFF] to-[#b96edc] text-white pb-8 md:pb-12 lg:pb-[280px]">
+    <div className="bg-gradient-to-b from-[#C54AFF] to-[#b96edc] text-white pb-[100px] md:pb-[150px] lg:pb-[280px]">
       <h2
         data-aos="fade-up"
         data-aos-delay="0"
@@ -11,7 +11,7 @@ function LearnCours() {
         What you will learn_ from this course?
       </h2>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-1 md:gap-4 md:mx-4 lg:mx-36 mt-5">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-1 md:gap-4 md:mx-4 lg:mx-36 mt-5 mb-8 lg:mb-0">
         <h2
           data-aos="fade-up"
           data-aos-delay="100"
@@ -71,7 +71,7 @@ function LearnCours() {
         <h2
           data-aos="fade-up"
           data-aos-delay="900"
-          className="bg-gradient-to-r rounded-full py-3 text-center font-semibold text-xl transition duration-300 ease-in-out transform hover:scale-105 from-teal-400 to-blue-500 text-white"
+          className="md:hidden lg:block bg-gradient-to-r rounded-full py-3 text-center font-semibold text-xl transition duration-300 ease-in-out transform hover:scale-105 from-teal-400 to-blue-500 text-white"
         >
           Dart
         </h2>
