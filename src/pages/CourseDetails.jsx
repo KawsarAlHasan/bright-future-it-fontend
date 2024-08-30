@@ -9,10 +9,24 @@ import { motion } from "framer-motion";
 import NextBatch from "../components/NextBatch";
 import LearnCours from "../components/LearnCours";
 import CoursInfo from "../components/CoursInfo";
+import { Helmet } from "react-helmet-async";
 
 function CourseDetails() {
   return (
     <div>
+      <Helmet>
+        <title>{`Flutter Development - Bright Future IT`}</title>
+        <meta
+          name="description"
+          content={`Enroll in the Flutter Development course at Bright Future IT and advance your skills in Flutter, Dart, Firebase, SQLite.`}
+        />
+        <meta name="robots" content="index, follow" />
+        <link
+          rel="canonical"
+          href={`https://bright-futureit.com/course-details`}
+        />
+      </Helmet>
+
       <div
         style={{
           backgroundImage: `url(${bannerImage})`,

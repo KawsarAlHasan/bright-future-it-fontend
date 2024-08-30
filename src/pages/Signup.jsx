@@ -3,6 +3,7 @@ import API from "../api/axios";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import bannerImage from "../assets/bg-banner.png";
+import { Helmet } from "react-helmet-async";
 
 function Signup() {
   const [formData, setFormData] = useState({
@@ -64,6 +65,16 @@ function Signup() {
       }}
       className="hero "
     >
+      <Helmet>
+        <title>Sign Up - Bright Future IT</title>
+        <meta
+          name="description"
+          content="Create your account at Bright Future IT and start your journey with us."
+        />
+        <meta name="robots" content="noindex, nofollow" />
+        <link rel="canonical" href="https://bright-futureit.com/signup" />
+      </Helmet>
+
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="text-center hidden md:block lg:text-left">
           <h1 className="text-5xl font-bold">Sign up now!</h1>

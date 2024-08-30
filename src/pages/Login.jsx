@@ -3,6 +3,7 @@ import API from "../api/axios";
 import { useNavigate } from "react-router-dom";
 import bannerImage from "../assets/bg-banner.png";
 import { toast } from "react-toastify";
+import { Helmet } from "react-helmet-async";
 
 function Login() {
   const [formData, setFormData] = useState({
@@ -47,6 +48,15 @@ function Login() {
       }}
       className="hero"
     >
+      <Helmet>
+        <title>Login - Bright Future IT</title>
+        <meta
+          name="description"
+          content="Login to access your account at Bright Future IT."
+        />
+        <meta name="robots" content="noindex, nofollow" />
+        <link rel="canonical" href="https://bright-futureit.com/login" />
+      </Helmet>
       <div className="hero-content md:my-14 flex-col lg:flex-row-reverse">
         <div className="text-center hidden md:block lg:text-left">
           <h1 className="text-5xl font-bold">Login now!</h1>

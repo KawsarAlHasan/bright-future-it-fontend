@@ -17,24 +17,24 @@ function Navbar() {
   const navItems = (
     <>
       <li>
-        <Link className="font-medium" to="/">
+        <a className="font-medium" href="/">
           Home
-        </Link>
+        </a>
       </li>
       <li>
-        <Link className="font-medium" to="/course-details">
+        <a className="font-medium" href="/course-details">
           Course Details
-        </Link>
+        </a>
       </li>
       <li>
-        <Link className="font-medium" to="/about-us">
+        <a className="font-medium" href="/about-us">
           About Us
-        </Link>
+        </a>
       </li>
       <li>
-        <Link className="font-medium" to="/blog">
+        <a className="font-medium" href="/blog">
           Blog
-        </Link>
+        </a>
       </li>
 
       {user ? (

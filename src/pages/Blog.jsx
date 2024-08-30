@@ -1,5 +1,6 @@
 import React from "react";
 import BlogCard from "../components/BlogCard";
+import { Helmet } from "react-helmet-async";
 
 function Blog() {
   const blogs = [
@@ -33,6 +34,15 @@ function Blog() {
   ];
   return (
     <div>
+      <Helmet>
+        <title>Blog - Bright Future IT</title>
+        <meta
+          name="description"
+          content="Read the latest articles and updates from Bright Future IT on technology, education, and career advancement."
+        />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://bright-futureit.com/blog" />
+      </Helmet>
       <section className="bg-gray-100 py-12">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">

@@ -8,10 +8,20 @@ import dartImage from "../assets/dart.png";
 import firebaseImage from "../assets/firebase.png";
 import sqliteImage from "../assets/Sqlite.png";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 
 function AboutUs() {
   return (
     <div>
+      <Helmet>
+        <title>About Us - Bright Future IT</title>
+        <meta
+          name="description"
+          content="Learn more about Bright Future IT, our mission, vision, and the team behind our success."
+        />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://bright-futureit.com/about-us" />
+      </Helmet>
       <div
         style={{
           backgroundImage: `url(${bannerImage})`,

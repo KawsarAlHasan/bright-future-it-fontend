@@ -6,6 +6,7 @@ import LoginSignupModal from "../components/LoginSignupModal";
 import Loader from "../components/Loading";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock, faSchool } from "@fortawesome/free-solid-svg-icons";
+import { Helmet } from "react-helmet-async";
 
 function Enroll() {
   const { user } = useUserProfile();
@@ -39,6 +40,15 @@ function Enroll() {
   console.log(enrollStatus, courseID, userID);
   return (
     <div>
+      <Helmet>
+        <title>Enroll Now - Bright Future IT</title>
+        <meta
+          name="description"
+          content="Enroll now at Bright Future IT to start learning and advancing your career with our expert-led courses."
+        />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://bright-futureit.com/enroll" />
+      </Helmet>
       {ensLoading ? (
         <Loader />
       ) : !enrollStatus ? (
