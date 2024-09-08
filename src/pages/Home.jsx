@@ -5,7 +5,7 @@ import EducatingIndustryleaders from "../components/EducatingIndustryleaders";
 import HomeAboutInfo from "../components/HomeAboutInfo";
 import CourseModules from "../components/CourseModules";
 import Instructor from "../components/Instructor";
-import Feedback from "../components/Feedback";
+// import Feedback from "../components/Feedback";
 import "./Home.css";
 import { Helmet } from "react-helmet-async";
 
@@ -29,8 +29,10 @@ function Home() {
       <EducatingIndustryleaders />
       <HomeAboutInfo />
       <CourseModules />
-      <Instructor />
-      <Feedback />
+      <div className="pb-10">
+        <Instructor />
+      </div>
+      {/* <Feedback /> */}
     </div>
   );
 }

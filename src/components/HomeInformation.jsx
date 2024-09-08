@@ -22,7 +22,7 @@ function HomeInformation() {
           <img src={image1} alt="" />
           <div className="mx-3">
             <h2 className="text-[32px] font-semibold">
-              {isVisible && <CountUp start={0} end={300} duration={3} />}
+              {isVisible && <CountUp start={0} end={4} duration={3} />}
             </h2>
             <h2 className="text-[20px] font-normal mt-[-13px]">Instructors</h2>
           </div>
@@ -31,7 +31,7 @@ function HomeInformation() {
           <img src={image2} alt="" />
           <div className="mx-3">
             <h2 className="text-[32px] font-semibold flex">
-              {isVisible && <CountUp start={0} end={20000} duration={4} />}
+              {isVisible && <CountUp start={0} end={45} duration={4} />}
               <span>+</span>
             </h2>
             <h2 className="text-[20px] font-normal mt-[-13px]">Students</h2>
@@ -41,20 +41,22 @@ function HomeInformation() {
           <img src={image3} alt="" />
           <div className="mx-3">
             <h2 className="text-[32px] font-semibold flex">
-              {isVisible && <CountUp start={0} end={400} duration={3} />}
+              {isVisible && <CountUp start={0} end={78} duration={3} />}
               <span>+</span>
             </h2>
-            <h2 className="text-[20px] font-normal mt-[-13px]">Videos</h2>
+            <h2 className="text-[20px] font-normal mt-[-13px]">Live Class</h2>
           </div>
         </div>
         <div className="lg:items-center lg:justify-center flex">
           <img src={image4} alt="" />
           <div className="mx-3">
             <h2 className="text-[32px] font-semibold flex">
-              {isVisible && <CountUp start={0} end={100000} duration={6} />}
-              <span>+</span>
+              {isVisible && <CountUp start={0} end={6} duration={6} />}
+              <span> Months </span>
             </h2>
-            <h2 className="text-[20px] font-normal mt-[-13px]">User’s</h2>
+            <h2 className="text-[20px] font-normal mt-[-13px]">
+              Couse Duration
+            </h2>
           </div>
         </div>
       </div>

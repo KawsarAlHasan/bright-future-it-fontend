@@ -37,13 +37,13 @@ function CourseModules() {
             Module
           </span>
         </h2>
-        <p
+        {/* <p
           data-aos="fade-up"
           data-aos-delay="300"
           className="text-center text-[16px] md:text-[20px] font-normal mx-4"
         >
           Various versions have evolved over the years, sometimes by accident,
-        </p>
+        </p> */}
       </div>
 
       <div className="mx-5 md:mx-16 lg:mx-36 mt-10 flex flex-col gap-[5px]">
@@ -105,7 +105,7 @@ function CourseModules() {
                               className="bg-[#884AFF] w-3 h-3 rounded-full mr-2"
                               style={{ backgroundColor: "#884AFF" }}
                             ></span>
-                            <p>{topic.TopicName}</p>
+                            <p className="text-black ">{topic.TopicName}</p>
                           </div>
                         ))}
                       </div>

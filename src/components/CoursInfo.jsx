@@ -42,10 +42,14 @@ function CoursInfo() {
             </h2>
             <h2 className="card-title">Live Class</h2>
             <p>
-              The Programming Hero web development course includes 950 videos,
-              providing extensive coverage of MERN stack technologies. These
-              videos are designed to cater to learners at all levels, from
-              beginners to advanced developers.
+              Bright Future IT offers an immersive live Flutter course,
+              featuring over 118+ interactive sessions and hands-on projects.
+              This course covers every aspect of Flutter development, from the
+              fundamentals to advanced concepts, ensuring a deep understanding
+              of building cross-platform mobile applications. Whether you're a
+              beginner looking to start your journey in app development or an
+              experienced developer aiming to master Flutter, our live classes
+              are tailored to meet all levels of expertise.
             </p>
           </div>
         </div>
@@ -58,12 +62,15 @@ function CoursInfo() {
             <h2 className="card-title">
               <FontAwesomeIcon icon={faProjectDiagram} />
             </h2>
-            <h2 className="card-title">20+ Project</h2>
+            <h2 className="card-title">18+ Project</h2>
             <p>
-              The course includes 45 projects that give students many chances to
-              practice what they learn. These projects start with simple tasks
-              and gradually become more complex, helping students build their
-              skills step by step.
+              The Bright Future IT Flutter Course features 20 hands-on projects
+              that allow students to apply their learning in real-world
+              scenarios. These projects are carefully structured to start with
+              basic tasks and gradually increase in complexity. This
+              step-by-step approach ensures that students steadily build their
+              skills and confidence, ultimately mastering the art of
+              cross-platform app development with Flutter
             </p>
           </div>
         </div>
@@ -78,10 +85,12 @@ function CoursInfo() {
             </h2>
             <h2 className="card-title">12 Assignment</h2>
             <p>
-              The course has 12 assignments that help check how well students
-              understand and use what they've learned. These assignments are
-              spread out throughout the course to test both their knowledge and
-              their ability to apply it.
+              The Bright Future IT Flutter Course includes 12 strategically
+              placed assignments designed to evaluate students' understanding
+              and application of the material. These assignments are distributed
+              throughout the course, ensuring that students not only grasp the
+              concepts but also know how to effectively apply them in real-world
+              scenarios
             </p>
           </div>
         </div>

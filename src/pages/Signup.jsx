@@ -45,7 +45,7 @@ function Signup() {
 
       localStorage.setItem("token", response.data.data.token);
       toast(`Signup successful`);
-      navigate("/");
+      navigate("/enroll");
       window.location.reload();
     } catch (error) {
       if (error.response) {
@@ -79,9 +79,11 @@ function Signup() {
         <div className="text-center hidden md:block lg:text-left">
           <h1 className="text-5xl font-bold">Sign up now!</h1>
           <p className="py-6">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
+            Join Bright Future IT by registering today and take the first step
+            toward mastering Flutter development. Registration gives you access
+            to our comprehensive courses, live sessions, and hands-on projects.
+            Start your learning journey with us and unlock your potential in the
+            world of cross-platform app development!
           </p>
         </div>
         <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">

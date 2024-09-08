@@ -66,21 +66,23 @@ function AboutUs() {
             <h2
               data-aos="fade-up"
               data-aos-delay="0"
-              className="text-center mx-2 lg:mx-24 text-[24px] md:text-[40px] font-semibold text-[#C54AFF]"
+              className="text-center mx-2 lg:mx-24 text-[18px] md:text-[30px] font-semibold text-[#C54AFF]"
             >
-              Breakthroughs Begin with learning, reach for the future you
-              deserve
+              With a strong focus on practical experience, our courses include a
+              blend of in-depth lessons, interactive live sessions, and
+              real-world projects.
             </h2>
 
             <p
               data-aos="fade-up"
               data-aos-delay="200"
-              className="text-center mx-4 mt-4 text-[16px] md:text-[20px] font-normal"
+              className="text-center mx-4 mt-4 text-[12px] md:text-[15px] font-normal"
             >
-              Dart, Flutter, Flutter Arcitecture, Flutter Wdgets, Firebase and
-              SQLite to build efficient, full-stack web applications from
-              scratch. Connect front-end and back-end seamlessly for a smooth
-              user experience
+              At Bright Future IT, we are passionate about shaping the future of
+              technology by helping our students reach their full potential.
+              Whether you’re just starting out or looking to enhance your
+              skills, we’re here to guide you every step of the way. Join us and
+              take the first step toward a bright future in IT.
             </p>
           </div>
           <div className="hidden lg:block mx-2">

@@ -17,25 +17,25 @@ function Navbar() {
   const navItems = (
     <>
       <li>
-        <a className="font-medium" href="/">
+        <Link className="font-medium" to="/">
           Home
-        </a>
+        </Link>
       </li>
       <li>
-        <a className="font-medium" href="/course-details">
+        <Link className="font-medium" to="/course-details">
           Course Details
-        </a>
+        </Link>
       </li>
       <li>
-        <a className="font-medium" href="/about-us">
+        <Link className="font-medium" to="/about-us">
           About Us
-        </a>
+        </Link>
       </li>
-      <li>
-        <a className="font-medium" href="/blog">
+      {/* <li>
+        <Link className="font-medium" to="/blog">
           Blog
-        </a>
-      </li>
+        </Link>
+      </li> */}
 
       {user ? (
         <div className="dropdown dropdown-end">

@@ -143,7 +143,7 @@ const EnrollForm = () => {
     <div className="max-w-md mx-auto">
       <form
         onSubmit={handleSubmit}
-        className="bg-white shadow-md rounded-lg p-6"
+        className="shadow-2xl bg-base-100 rounded-lg p-6"
       >
         <h2 className="text-2xl font-bold mb-4 text-center">
           Enroll{" "}
@@ -153,10 +153,7 @@ const EnrollForm = () => {
         </h2>
 
         <div className="mb-3">
-          <label
-            htmlFor="payment_method"
-            className="block font-semibold text-gray-700 mb-2"
-          >
+          <label htmlFor="payment_method" className="block font-semibold mb-2">
             Payment Method
           </label>
           <select
@@ -179,16 +176,13 @@ const EnrollForm = () => {
               alt={formData.payment_method}
               className="w-8 h-8 mr-3 rounded-md "
             />
-            <p className="text-gray-700 font-semibold">{paymentInfo.text}</p>
+            <p className=" font-semibold">{paymentInfo.text}</p>
           </div>
         )}
 
         <div className="flex gap-1 mb-8">
           <div className="">
-            <label
-              htmlFor="payment_type"
-              className=" font-semibold text-gray-700"
-            >
+            <label htmlFor="payment_type" className=" font-semibold ">
               Payment Type
             </label>
             <select
@@ -204,10 +198,7 @@ const EnrollForm = () => {
           </div>
 
           <div className="ml-5">
-            <label
-              htmlFor="promo_code"
-              className="font-semibold text-gray-700 mb-2"
-            >
+            <label htmlFor="promo_code" className="font-semibold  mb-2">
               Promo Code <span className="text-sm">(Operational)</span>
             </label>
             <input
@@ -225,9 +216,12 @@ const EnrollForm = () => {
         </div>
 
         <div className="mb-4">
-          <h2 className=" font-normal">
+          <h2 className="  font-normal">
             Total Amount:{" "}
-            <span className="text-[#C54AFF]">{clculateAmount}</span>
+            <span className="text-[#C54AFF]">
+              {clculateAmount}
+              <span className="text-2xl font-bold">৳</span>
+            </span>
           </h2>
         </div>
         <div className="mb-8">
@@ -247,7 +241,7 @@ const EnrollForm = () => {
             <div className="mb-8">
               <label
                 htmlFor="sender_number"
-                className="font-semibold block text-gray-700 mb-2"
+                className="font-semibold block  mb-2"
               >
                 Sender Number
               </label>
@@ -263,10 +257,7 @@ const EnrollForm = () => {
             </div>
 
             <div className="mb-8">
-              <label
-                htmlFor="txnid"
-                className="font-semibold block text-gray-700 mb-2"
-              >
+              <label htmlFor="txnid" className="font-semibold block  mb-2">
                 Transaction ID
               </label>
               <input
