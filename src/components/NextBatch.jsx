@@ -15,7 +15,7 @@ function NextBatch() {
         data-aos-delay="0"
         className="text-center text-[24px] md:text-[40px] font-semibold "
       >
-        Next Batch Schedule
+        Current Batch Schedule
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mx-10 md:mx-40">
         <div
@@ -31,7 +31,7 @@ function NextBatch() {
               Enrollment Starts
             </h2>
             <h2 className="text-[22px] font-semibold mt-[-10px]">
-              10 December, 2024
+              02 September, 2024
             </h2>
           </div>
         </div>
@@ -49,7 +49,7 @@ function NextBatch() {
               Enrollment Ends
             </h2>
             <h2 className="text-[22px] font-semibold mt-[-10px]">
-              24 December, 2024
+              25 September, 2024
             </h2>
           </div>
         </div>
@@ -67,7 +67,7 @@ function NextBatch() {
               Orientation Starts
             </h2>
             <h2 className="text-[22px] font-semibold mt-[-10px]">
-              28 December, 2024
+              28 September, 2024
             </h2>
           </div>
         </div>
@@ -85,7 +85,7 @@ function NextBatch() {
               Class Starts
             </h2>
             <h2 className="text-[22px] font-semibold mt-[-10px]">
-              31 December, 2024
+              01 October, 2024
             </h2>
           </div>
         </div>
@@ -96,7 +96,7 @@ function NextBatch() {
         data-aos-delay="600"
         className="text-center my-5 mx-4 text-[16px] md:text-[20px] font-normal text-gray-300"
       >
-        If you are interested To enroll in 11th batch, register on the website
+        If you are interested To enroll in 1st batch, register on the website
       </p>
 
       <div

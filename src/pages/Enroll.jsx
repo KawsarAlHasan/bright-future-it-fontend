@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import bannerImage from "../assets/bg-banner.png";
 import { useUserProfile, useSingleCourses } from "../api/allApi";
 import API from "../api/axios";
 import EnrollForm from "../components/EnrollForm";
@@ -37,9 +38,14 @@ function Enroll() {
     fetchEnrollStatus();
   }, [courseID, userID]);
 
-  console.log(enrollStatus, courseID, userID);
   return (
-    <div>
+    <div
+      style={{
+        backgroundImage: `url(${bannerImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
       <Helmet>
         <title>Enroll Now - Bright Future IT</title>
         <meta
@@ -52,8 +58,8 @@ function Enroll() {
       {ensLoading ? (
         <Loader />
       ) : !enrollStatus ? (
-        <div className="mb-12">
-          <div className="mt-10">
+        <div className="py-12">
+          <div className="">
             <h2
               data-aos="fade-up"
               data-aos-delay="0"
@@ -64,14 +70,14 @@ function Enroll() {
                 Process
               </span>
             </h2>
-            <p
+            {/* <p
               data-aos="fade-up"
               data-aos-delay="200"
               className="text-center text-[16px] md:text-[20px] font-normal mx-4"
             >
               Various versions have evolved over the years, sometimes by
               accident,
-            </p>
+            </p> */}
           </div>
 
           <div
@@ -85,9 +91,9 @@ function Enroll() {
                 behavior="scroll"
                 direction="left"
               >
-                25th August Friday, our all outlets are open except Chattogram
-                Agrabad, Khulna, Rangpur & Rajshahi outlets. Additionally, our
-                online activities are open and operational.
+                If you pay the entire amount at once, you will get a discount of
+                Tk. 2000. And if you enroll within 20th September, you will get
+                an extra Tk. 1000 discount.
               </marquee>
             </div>
           </div>
@@ -115,7 +121,7 @@ function Enroll() {
           </div>
         </div>
       ) : (
-        <div className="my-12">
+        <div className="py-12">
           <h2
             data-aos="fade-up"
             data-aos-delay="0"
@@ -126,6 +132,26 @@ function Enroll() {
               enrolled
             </span>
           </h2>
+          <div data-aos="fade-up" data-aos-delay="300">
+            <h2 className="font-semibold text-2xl text-center">
+              Your payment status:{" "}
+              <span className="">{enrollStatus.data.status}</span>
+            </h2>
+
+            <div className="text-center mt-3">
+              {enrollStatus.data.status === "pending"
+                ? "Please wait while our team verifies your payment. Once the payment is confirmed, you will gain access to the Bright Future IT Student app."
+                : enrollStatus.data.status === "completed"
+                ? "Your payment has been confirmed. You now have access to the Bright Future IT Student app. Please Download our Bright Future App. Enjoy learning!"
+                : "Your payment could not be processed. Please try again or contact support for assistance."}
+            </div>
+
+            <h5 className="text-center mt-3">
+              For any inquiries or requirements, please contact us at:
+              01728871234
+            </h5>
+          </div>
+
           <div className="justify-center items-center flex gap-4 my-8">
             <div
               data-aos="fade-up"

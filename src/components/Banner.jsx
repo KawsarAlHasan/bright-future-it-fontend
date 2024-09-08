@@ -6,6 +6,7 @@ import buttonMiddle from "../assets/Group (2).png";
 import buttonDown from "../assets/Group (1).png";
 import { motion } from "framer-motion";
 import TypingEffect from "react-typing-effect";
+import { Link } from "react-router-dom";
 
 function Banner() {
   return (
@@ -30,7 +31,7 @@ function Banner() {
               Launch your future career by learning{" "}
               <span className="text-purple-500">
                 <TypingEffect
-                  text={["Product Design🚀", "Flutter"]}
+                  text={["Flutter🚀", "App Development", "(Android & iOS)"]}
                   speed={100}
                   eraseDelay={400}
                 />
@@ -42,15 +43,16 @@ function Banner() {
               className="my-5 text-[16px] lg:text-[20px] font-normal"
             >
               Learning tech skills from experts. Live tech bootcamps and online
-              classes to kickstart or accelerate your career
+              classes to kickstart or accelerate your career. If you are
+              interested To enroll in 1th batch, register on the website
             </p>
 
             <div data-aos="fade-up" data-aos-delay="700" className="flex gap-4">
               <button className="btn btn-sm md:btn-md text-white bg-gradient-to-r from-[#884AFF] to-[#C54AFF] hover:from-teal-400 hover:to-blue-500 px-5 md:px-12 py-2 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
-                Live Bootcamp
+                <Link to="/enroll">Enroll Now</Link>
               </button>
               <button className="btn btn-sm md:btn-md btn-outline btn-primary px-5 md:px-12 py-2 rounded-full shadow-lg hover:bg-gradient-to-r hover:from-teal-400 hover:to-blue-500 hover:text-white text-primary transition duration-300 ease-in-out transform hover:scale-105">
-                Video Classes
+                <Link to="/signup">Free Seminer</Link>
               </button>
             </div>
           </div>

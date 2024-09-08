@@ -73,8 +73,8 @@ function CourseDetails() {
               data-aos-delay="0"
               className="text-center mx-2 lg:mx-24 text-[24px] md:text-[40px] font-semibold text-[#C54AFF]"
             >
-              Breakthroughs Begin with learning, reach for the future you
-              deserve
+              Breakthroughs in Flutter: Building the Future You Deserve with
+              Bright Future It
             </h2>
 
             <p
@@ -83,9 +83,9 @@ function CourseDetails() {
               className="text-center mx-4 mt-4 text-[16px] md:text-[20px] font-normal"
             >
               Dart, Flutter, Flutter Arcitecture, Flutter Wdgets, Firebase and
-              SQLite to build efficient, full-stack web applications from
-              scratch. Connect front-end and back-end seamlessly for a smooth
-              user experience
+              SQLite to build efficient, Andriod & iOS applications devolop from
+              scratch. Connect back-end with API seamlessly for a smooth user
+              experience
             </p>
           </div>
           <div className="hidden lg:block mx-2">

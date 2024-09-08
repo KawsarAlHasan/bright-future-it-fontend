@@ -24,63 +24,77 @@ function LearnCours() {
           data-aos-delay="200"
           className="bg-gradient-to-r rounded-full py-3 text-center font-semibold text-xl transition duration-300 ease-in-out transform hover:scale-105 from-pink-500 to-orange-500 text-white"
         >
-          Flutter
+          OOP
         </h2>
         <h2
           data-aos="fade-up"
           data-aos-delay="300"
           className="bg-gradient-to-r rounded-full py-3 text-center font-semibold text-xl transition duration-300 ease-in-out transform hover:scale-105 from-teal-400 to-blue-500 text-white"
         >
-          Flutter Wdgets
+          Problem Solving
         </h2>
         <h2
           data-aos="fade-up"
           data-aos-delay="400"
           className="bg-gradient-to-r rounded-full py-3 text-center font-semibold text-xl transition duration-300 ease-in-out transform hover:scale-105 from-pink-500 to-orange-500 text-white"
         >
-          Arcitecture
+          Flutter Basic
+        </h2>
+        <h2
+          data-aos="fade-up"
+          data-aos-delay="400"
+          className="bg-gradient-to-r rounded-full py-3 text-center font-semibold text-xl transition duration-300 ease-in-out transform hover:scale-105 from-teal-400 to-blue-500 text-white"
+        >
+          Flutter Arcitecture
         </h2>
         <h2
           data-aos="fade-up"
           data-aos-delay="500"
-          className="bg-gradient-to-r rounded-full py-3 text-center font-semibold text-xl transition duration-300 ease-in-out transform hover:scale-105 from-teal-400 to-blue-500 text-white"
+          className="bg-gradient-to-r rounded-full py-3 text-center font-semibold text-xl transition duration-300 ease-in-out transform hover:scale-105 from-pink-500 to-orange-500 text-white"
         >
-          Firebase
+          Flutter Widgets
         </h2>
         <h2
           data-aos="fade-up"
           data-aos-delay="600"
-          className="bg-gradient-to-r rounded-full py-3 text-center font-semibold text-xl transition duration-300 ease-in-out transform hover:scale-105 from-pink-500 to-orange-500 text-white"
+          className="bg-gradient-to-r rounded-full py-3 text-center font-semibold text-xl transition duration-300 ease-in-out transform hover:scale-105 from-teal-400 to-blue-500 text-white"
         >
-          SQLite
+          Flutter Firebase
         </h2>
         <h2
           data-aos="fade-up"
           data-aos-delay="700"
-          className="bg-gradient-to-r rounded-full py-3 text-center font-semibold text-xl transition duration-300 ease-in-out transform hover:scale-105 from-teal-400 to-blue-500 text-white"
+          className="bg-gradient-to-r rounded-full py-3 text-center font-semibold text-xl transition duration-300 ease-in-out transform hover:scale-105 from-pink-500 to-orange-500 text-white"
         >
-          API
+          GetX
         </h2>
         <h2
           data-aos="fade-up"
           data-aos-delay="800"
-          className="bg-gradient-to-r rounded-full py-3 text-center font-semibold text-xl transition duration-300 ease-in-out transform hover:scale-105 from-pink-500 to-orange-500 text-white"
+          className="bg-gradient-to-r rounded-full py-3 text-center font-semibold text-xl transition duration-300 ease-in-out transform hover:scale-105 from-teal-400 to-blue-500 text-white"
         >
-          Job Placement
+          APIs Implementation
         </h2>
         <h2
           data-aos="fade-up"
           data-aos-delay="900"
-          className="md:hidden lg:block bg-gradient-to-r rounded-full py-3 text-center font-semibold text-xl transition duration-300 ease-in-out transform hover:scale-105 from-teal-400 to-blue-500 text-white"
+          className="bg-gradient-to-r rounded-full py-3 text-center font-semibold text-xl transition duration-300 ease-in-out transform hover:scale-105 from-pink-500 to-orange-500 text-white"
         >
-          Dart
+          App Deployment
+        </h2>
+        <h2
+          data-aos="fade-up"
+          data-aos-delay="1000"
+          className="bg-gradient-to-r rounded-full py-3 text-center font-semibold text-xl transition duration-300 ease-in-out transform hover:scale-105 from-teal-400 to-blue-500 text-white"
+        >
+          Job Placement
         </h2>
         <h2
           data-aos="fade-up"
           data-aos-delay="1000"
           className="bg-gradient-to-r rounded-full py-3 text-center font-semibold text-xl transition duration-300 ease-in-out transform hover:scale-105 from-pink-500 to-orange-500 text-white"
         >
-          Freelancing
+          Freelansing
         </h2>
       </div>
     </div>

@@ -6,6 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
+import ScrollToTopButton from "../components/ScrollToTopButton";
 
 function Main() {
   React.useEffect(() => {
@@ -22,6 +23,7 @@ function Main() {
       <Navbar />
       <div className="">
         <Outlet />
+        <ScrollToTopButton />
         <ToastContainer />
       </div>
       <Footer />

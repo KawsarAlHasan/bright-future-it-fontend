@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 const ThemeSwitcher = () => {
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
@@ -9,7 +9,8 @@ const ThemeSwitcher = () => {
   }, [theme]);
 
   const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
+    setTheme(theme === "dark" ? "light" : "dark");
+    window.location.reload();
   };
 
   return (
@@ -18,7 +19,7 @@ const ThemeSwitcher = () => {
       <input
         type="checkbox"
         onChange={toggleTheme}
-        checked={theme === "dark"}
+        checked={theme === "light"}
       />
 
       {/* Sun Icon */}

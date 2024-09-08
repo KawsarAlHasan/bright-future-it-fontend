@@ -61,9 +61,11 @@ function Login() {
         <div className="text-center hidden md:block lg:text-left">
           <h1 className="text-5xl font-bold">Login now!</h1>
           <p className="py-6">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
+            Start your journey with Bright Future IT by logging in today and
+            unlocking access to our expert-led Flutter courses. Whether you’re
+            ready to dive into a new lesson, continue your learning path, or
+            take on a challenging project, it all begins here. Let’s build the
+            future together!
           </p>
         </div>
         <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
